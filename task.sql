@@ -51,4 +51,4 @@ CREATE TABLE Users (
 
 --changeset pochtalon:6 labels:0.0.3
 CREATE INDEX Email ON Users (Email);
---rollback DROP INDEX Email ON Users (Email);
+--rollback ALTER TABLE Users DROP INDEX Email;
